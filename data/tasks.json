@@ -2,32 +2,36 @@
 {
 "id": 1,
 "title": "Підготувати конспект лекції 2",
-"completed": true,
-"dueDate": "2026-09-15"
-"priority": &quot;medium&quot;
+"completed": false,
+"dueDate": "2026-09-15",
+"priority": "low"
 },
 {
 "id": 2,
 "title": "Виконати практичну роботу № 2",
-"completed": false,
-"dueDate": "2026-09-10"
+"completed": true,
+"dueDate": "2026-09-10",
+"priority": "high"
 },
 {
 "id": 3,
 "title": "Прочитати розділ про branches",
 "completed": false,
-"dueDate": "2026-09-20"
+"dueDate": "2026-09-20",
+"priority": "low"
 },
 {
 "id": 4,
 "title": "Написати звіт по лабораторній роботі № 1",
 "completed": false,
-"dueDate": "2026-09-18"
+"dueDate": "2026-09-18",
+"priority": "medium"
 },
 {
 "id": 5,
 "title": "Підготуватися до семінару з теми 'Git та GitHub'",
 "completed": true,
-"dueDate": "2026-09-12" 
+"dueDate": "2026-09-12",
+"priority": "high"
 }
 ]
