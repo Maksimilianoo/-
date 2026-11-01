@@ -9,8 +9,6 @@ function TaskItem({ task }) {
 
 export default TaskItem;
 
-<li className={`task-card priority-${task.priority} ${task.completed ? 'completed' : ''}`}></li>
-
 import styled from 'styled-components';
 
 const StyledCard = styled.li`
