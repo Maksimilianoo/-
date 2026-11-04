@@ -1,3 +1,10 @@
+/* ===================================================
+   SYSTEM BREAKPOINTS:
+   - Mobile:  0px і більше (базові стилі, mobile-first)
+   - Tablet:  600px і більше (@media (min-width: 600px))
+   - Desktop: 1024px і більше (@media (min-width: 1024px))
+   =================================================== */
+
 body {
   margin: 0;
   
@@ -40,4 +47,73 @@ body {
     padding: 10px 12px;
     gap: 8px;
   }
+}
+
+.task-card h3 {
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  margin-top: 0;
+}
+
+.app-container {
+  padding: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .app-container {
+    padding: 24px;
+  }
+}
+
+.task-list {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 колонка на смартфонах */
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .task-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .task-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки на десктопах */
+  }
+}
+
+/* Large Desktop (1440px і більше) */
+@media (min-width: 1440px) {
+  .task-list {
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+  }
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column; /* Вертикально на мобільних */
+  gap: 8px;
+  padding: 16px;
+  background-color: #f4f5f7;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  .app-header {
+    flex-direction: row; /* Горизонтально на планшетах та десктопах */
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.app-header h1 {
+  margin: 0;
+  font-size: clamp(1.25rem, 4vw, 2rem);
 }
